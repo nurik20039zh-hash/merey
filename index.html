@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің Сүйікті Рецепттерім</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem text-align: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .recipe-card {
+                flex-direction: row;
+            }
+            .recipe-image, .recipe-content {
+                flex: 1;
+            }
+        }
+
+        .recipe-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 300px;
+        }
+
+        .recipe-content {
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #e67e22;
+            margin-top: 0;
+        }
+
+        h3 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        ul, ol {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Дәмді Рецепттер Кітабы</h1>
+    <p>Сүйіспеншілікпен дайындалған үй тағамдары</p>
+</header>
+
+<div class="container">
+
+    <article class="recipe-card">
+        <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80" alt="Донер кебаб">
+        </div>
+        <div class="recipe-content">
+            <h2>Үй Донері</h2>
+            <h3>Құрамы:</h3>
+            <ul>
+                <li>Лаваш немесе пита</li>
+                <li>Тауық еті (дәмдеуіштермен қуырылған) — 200г</li>
+                <li>Орамжапырақ, қияр, қызанақ</li>
+                <li>Тұздық: қаймақ, майонез, сарымсақ және көкөністер</li>
+            </ul>
+            <h3>Дайындалуы:</h3>
+            <ol>
+                <li>Етті жұқа тілімдерге турап, қызарғанша қуырыңыз.</li>
+                <li>Көкөністерді майдалап тураңыз.</li>
+                <li>Лавашқа тұздық жағып, ет пен көкөністерді салыңыз.</li>
+                <li>Тығыз орап, құрғақ табада қытырлақ болғанша кептіріңіз.</li>
+            </ol>
+        </div>
+    </article>
+
+    <article class="recipe-card">
+    <div class="recipe-image">
+        <img src="https://images.unsplash.com/photo-1512415178651-7890b07e5b5e?q=80&w=800" alt="Манты">
+    </div>
+        <div class="recipe-content">
+            <h2>Дәстүрлі Манты</h2>
+            <h3>Құрамы:</h3>
+            <ul>
+                <li>Қамыр: ұн, су, тұз, 1 жұмыртқа</li>
+                <li>Салмасы: сиыр немесе қой еті (тартылған) — 500г</li>
+                <li>Бас пияз — 500г (етпен 1:1 қатынасы маңызды)</li>
+                <li>Құйрық май немесе сары май</li>
+            </ul>
+            <h3>Дайындалуы:</h3>
+            <ol>
+                <li>Тығыз қамыр илеп, 30 минутқа демалдырыңыз.</li>
+                <li>Ет пен пиязды ұсақтап, текшелеп тураңыз, тұз бен зира қосыңыз.</li>
+                <li>Қамырды жұқалап жайып, шаршы етіп тураңыз, салмасын салып, түйіңіз.</li>
+                <li>Манты қазанында (буда) 45 минут пісіріңіз.</li>
+            </ol>
+        </div>
+    </article>
+
+    <article class="recipe-card">
+        <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1575853121743-60c24f0a7502?auto=format&fit=crop&w=800&q=80" alt="Блины">
+        </div>
+        <div class="recipe-content">
+            <h2>Жұқа, өрнекті құймақтар</h2>
+            <h3>Құрамы:</h3>
+            <ul>
+                <li>Сүт — 500 мл</li>
+                <li>Жұмыртқа — 3 дана</li>
+                <li>Ұн — 200г</li>
+                <li>Қант — 2 ас қасық, бір шымшым тұз</li>
+                <li>Өсімдік майы — 3 ас қасық</li>
+            </ul>
+            <h3>Дайындалуы:</h3>
+            <ol>
+                <li>Жұмыртқаны қантпен және тұзбен шайқаңыз.</li>
+                <li>Сүттің жартысын қосып, ұнды біртіндеп себіңіз, түйіршіктерін араластырыңыз.</li>
+                <li>Қалған сүт пен майды құйыңыз.</li>
+                <li>Ыстық табада екі жағы қызарғанша пісіріңіз.</li>
+            </ol>
+        </div>
+    </article>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Менің Аспаздық Сайтым</p>
+</footer>
+
+</body>
+</html>
